@@ -1,7 +1,6 @@
 
 <p align="center">
-<a href="https://github.com/tabler/tabler"><img src="https://raw.githubusercontent.com/tabler/tabler/dev/src/static/logo.svg" alt="A premium and open source dashboard template with a responsive and high-quality UI." width="300"></a><br><br>
-A premium and open source dashboard template with a responsive and high-quality UI.
+<a href="https://github.com/tabler/tabler"><img src="https://raw.githubusercontent.com/tabler/tabler/dev/src/static/logo.svg" alt="A premium and open source dashboard template with a responsive and high-quality UI." width="300"></a><br><br> Just an open source dashboard template with a responsive and high-quality UI.
 </p>
 
 <p align="center">
@@ -10,7 +9,7 @@ A premium and open source dashboard template with a responsive and high-quality 
 <a href="https://preview.tabler.io" target="__blank"><img src="https://img.shields.io/static/v1?label=Demo&message=preview&color=228be6" alt="Tabler preview"></a>
 <a href="https://github.com/tabler/tabler/blob/master/LICENSE"><img src="https://img.shields.io/npm/l/tabler.svg?label=License&message=MIT&color=1c7ed6" alt="License"></a>
 <a href="https://github.com/tabler/tabler/archive/dev.zip" target="__blank"><img src="https://img.shields.io/static/v1?label=Download&message=ZIP&color=339af0" alt="Tabler preview"></a>
-<a href="https://github.com/tabler/tabler/actions/workflows/preview.yml" target="__blank"><img alt="GitHub stars" src="https://github.com/tabler/tabler/actions/workflows/preview.yml/badge.svg"></a>
+<br>
 <a href="https://github.com/tabler/tabler" target="__blank"><img alt="GitHub stars" src="https://img.shields.io/github/stars/tabler/tabler?style=social"></a>
 </p>
 
@@ -38,11 +37,6 @@ We've created this admin panel for everyone who wants to create templates based 
 * **Clean Code:** We followed Bootstrap’s guidelines carefully to make your integration as easy as possible. All code is handwritten and W3C valid.
 * **Demo pages**: Tabler features over 20 individual pages using various components, which gives you the freedom to choose and combine. All components can vary in color and styling that you can easily modify using Sass. Sky is the limit!
 * **Single Page Application versions:** [Tabler React](https://github.com/tabler/tabler-react) has React components for Tabler.
-
-
-## Documentation
-
-Documentation is available as a part of Tabler preview: https://preview.tabler.io/docs/
 
 ## Sponsor Tabler
 
@@ -147,12 +141,6 @@ This project exists thanks to all the people who contribute.
 Thank you to all our backers! 🙏 [Become a backer](https://opencollective.com/tabler#backer)
 
 <a href="https://opencollective.com/tabler#backers" target="_blank"><img src="https://opencollective.com/tabler/tiers/backer.svg?width=890&button=false" /></a>
-
-## Thanks
-
-<a href="https://www.chromatic.com/"><img src="https://user-images.githubusercontent.com/321738/84662277-e3db4f80-af1b-11ea-88f5-91d67a5e59f6.png" width="153" height="30" alt="Chromatic" /></a>
-
-Thanks to [Chromatic](https://www.chromatic.com/) for providing the visual testing platform that helps us review UI changes and catch visual regressions.
 
 ## License
 

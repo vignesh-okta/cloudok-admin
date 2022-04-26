@@ -1,0 +1,4 @@
+{
+"auth":"https://login.vigneshl.com/app/exkb5on16eNHt5ftx2p7/sso/saml/metadata",
+"okta":"https://www.velphoroaccesssolutionY2I.dev.Mckesson.com",
+}
