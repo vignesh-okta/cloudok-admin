@@ -20,6 +20,7 @@
     <link href="./static/dist/css/tabler-vendors.min.css" rel="stylesheet" />
     <link href="./static/dist/css/demo.min.css" rel="stylesheet" />
     <!-- JS Files -->
+
     <script src="./static/dist/js/tabler.min.js"></script>
     <!-- <script src="./static/dist/js/demo.min.js"></script> -->
   </head>
@@ -431,18 +432,7 @@
         </div>
       </div>
       <div class="page-wrapper">
-        <div class="container-xl">
-          <!-- Page title -->
-          <div class="page-header d-print-none">
-            <div class="row align-items-center">
-              <div class="col">
-                <!-- Page pre-title -->
-                <div class="page-pretitle">Overview</div>
-                <h2 class="page-title">Dashboard</h2>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="container-xl">{% block content %} {% endblock content %}</div>
       </div>
       <footer class="footer footer-transparent d-print-none">
         <div class="container-xl">
@@ -480,4 +470,5 @@
       </footer>
     </div>
   </body>
+  {% block scripts %} {% endblock scripts %}
 </html>

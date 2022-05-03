@@ -1,14 +1,14 @@
 {
-
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "Python: Current File",
-            "type": "python",
-            "request": "launch",
-            "program": "./application.py",
-            "console": "integratedTerminal",
-            "justMyCode": false
-        }
-    ]
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: Current File",
+      "type": "python",
+      "request": "launch",
+      "program": "./application.py",
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "gevent": true
+    }
+  ]
 }

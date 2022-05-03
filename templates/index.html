@@ -1,0 +1,55 @@
+{% extends 'base.html' %}      
+{% block content %}     
+       <!-- Page title -->
+          <div id="dashboard" class="page-header d-print-none">
+            <div class="row align-items-center">
+              <div class="col">
+                <!-- Page pre-title -->
+                <div class="page-pretitle">Overview</div>
+                <h2 class="page-title">Dashboard</h2>
+              </div>
+            </div>
+          </div>
+{% endblock content %}
+{% block scripts %}
+<script src="./static/dist/js/applink.js">
+</script>
+<script type="text/javascript">
+//   $("#dashboard").addClass("active")
+  $("#footer").removeAttr('style')
+  function notify() {
+    $("#notify").empty()
+    $.ajax({
+      url: "/regreq",
+      type: 'GET',
+      success: function(response) {
+        $.each(JSON.parse(response)["data"], function(index, value) {
+          if (index == 0) {
+            var ab = '<a href="/approve" class="dropdown-item d-flex"><div><strong>' + value[1] + '</strong> is waiting for approval</div></a>'
+          } else {
+            var ab = '<div class="dropdown-divider"></div><a href="/approve" class="dropdown-item d-flex"><div><strong>' + value[1] + '</strong> is waiting for approval</div></a>'
+          }
+          $("#notify").append(ab)
+        })
+        if ($("#notify").has("a").length == 1) {
+          $("#n1").addClass("nav-unread").removeClass("nav-read")
+          $("#bell").removeAttr("style")
+          $("#dropdown").attr("data-toggle", "dropdown")
+        } else {
+          $("#n1").addClass("nav-read").removeClass("nav-unread")
+        }
+      },
+      error: function(response) {
+        console.log(response.responseText);
+      }
+    });
+  }
+  notify()
+  if (!(localStorage.getItem("title").includes("Admin") || localStorage.getItem("title").includes("admin"))) {
+    console.log("I am an Admin");
+    $("[name=admin]").remove()
+  }
+</script>
+</body>
+</html>
+{% endblock scripts %}
