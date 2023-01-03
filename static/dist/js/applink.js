@@ -1,4 +1,4 @@
-var oktabaseURL = "https://vigneshl.okta.com";
+var oktabaseURL = "https://login.vigneshl.com";
 var request = new Array(5);
 const app = document.getElementById("dashboard");
 const container = document.createElement("div");
