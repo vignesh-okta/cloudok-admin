@@ -1,6 +1,6 @@
 import mysql.connector
 from core.SCIMCore import SCIMCore
-import uuid
+import uuid, os
 import time
 uid = None
 
