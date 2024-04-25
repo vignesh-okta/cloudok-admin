@@ -4,7 +4,7 @@ import uuid
 import time
 uid = None
 
-mydb = mysql.connector.connect(host='scimv2.caykdouuihdz.us-west-2.rds.amazonaws.com', user='admin', password='Okta1234' , database='scim',auth_plugin='mysql_native_password')
+mydb = mysql.connector.connect(host=os.environ['host'], user=os.environ['db_user'], password=os.environ['db_password'] , database=os.environ['db_name'],auth_plugin='mysql_native_password')
 mycursor = mydb.cursor()
 # mycursor.execute('CREATE DATABASE scim;')
 scim_core = SCIMCore()
